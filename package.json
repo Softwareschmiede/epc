@@ -1,0 +1,29 @@
+{
+  "name": "epc",
+  "version": "0.0.1",
+  "description": "The EnOcean Protocol Controller was build to work with devices which implements the EnOcean protocol.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Softwareschmiede/epc.git"
+  },
+  "keywords": [
+    "EnOcean",
+    "Protocol",
+    "Controller",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "David Spanier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Softwareschmiede/epc/issues"
+  },
+  "homepage": "https://github.com/Softwareschmiede/epc#readme",
+  "dependencies": {
+    "eep-parser": "0.0.1"
+  }
+}
