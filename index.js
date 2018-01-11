@@ -27,7 +27,6 @@ class EPC extends EventEmitter {
         const knownDevices = options.knownDevices ? options.knownDevices : [];
 
         _eepParser = new EEPParser({knownDevices: knownDevices});
-        console.log(_eepParser.getDevices());
         _serialport = new SerialPort(_config.port, { baudRate: _config.baudrate, autoOpen: false });
     }
 
@@ -59,7 +58,7 @@ class EPC extends EventEmitter {
             }
         });
 
-        console.log('Waiting for imput');
+        console.log('Waiting for input');
 
         parser.on('data', (buf) => {
             const packet = _eepParser.parse(buf);
