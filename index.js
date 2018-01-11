@@ -25,7 +25,9 @@ class EPC extends EventEmitter {
         _config.baseId = options.baseId ? options.baseId : '00000000';
 
         const knownDevices = options.knownDevices ? options.knownDevices : [];
+
         _eepParser = new EEPParser({knownDevices: knownDevices});
+        console.log(_eepParser.getDevices());
         _serialport = new SerialPort(_config.port, { baudRate: _config.baudrate, autoOpen: false });
     }
 
