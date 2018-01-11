@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/Softwareschmiede/epc#readme",
   "dependencies": {
-    "eep-parser": "0.0.1"
+    "eep-parser": "0.0.2",
+    "erp-parser": "0.0.1",
+    "serialport": "^6.0.4"
   }
 }
