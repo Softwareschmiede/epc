@@ -57,14 +57,18 @@ class EPC extends EventEmitter {
             }
         });
 
+        console.log('Waiting for imput');
+
         parser.on('data', (buf) => {
             const packet = _eepParser.parse(buf);
 
             console.log(packet);
 
             if (_learnMode && packet && packet.learnMode) {
+                console.log(packet);
                 this.emit('new-device', packet);
             } else if (packet && !packet.learnMode) {
+                console.log(packet);
                 this.emit('known-device', packet);
             } else {
                 // TODO: Device unknown
