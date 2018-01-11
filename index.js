@@ -60,6 +60,8 @@ class EPC extends EventEmitter {
         parser.on('data', (buf) => {
             const packet = _eepParser.parse(buf);
 
+            console.log(packet);
+
             if (_learnMode && packet && packet.learnMode) {
                 this.emit('new-device', packet);
             } else if (packet && !packet.learnMode) {
