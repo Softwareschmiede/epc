@@ -79,7 +79,9 @@ class EPC extends EventEmitter {
     }
 
     write() {
-        //_serialport.write();
+        // Workflow
+        // const telegram = eepParser.encode();
+        //_serialport.write(telegram);
 
     }
 }
