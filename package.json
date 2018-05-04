@@ -1,6 +1,6 @@
 {
   "name": "epc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The EnOcean Protocol Controller was build to work with devices which implements the EnOcean protocol.",
   "main": "index.js",
   "scripts": {
